@@ -1,7 +1,3 @@
-
-
-
-
 <!DOCTYPE html>
 <html>
 
@@ -18,40 +14,58 @@
 
   <title>FAZLUL HAQUE HOUSE</title>
 
-
-
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
   <!-- progress barstle -->
   <link rel="stylesheet" href="css/css-circular-prog-bar.css">
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
-  <!-- font wesome stylesheet -->
+  <!-- font awesome stylesheet -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  <style>
+    /* Add this style for the blue buttons */
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
 
+    .button-container a {
+      margin: 10px;
+      text-decoration: none;
+      color: #fff;
+      width: 252px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: blue;
+      border-radius: 5px;
+    }
+  </style>
 
   <link rel="stylesheet" href="css/css-circular-prog-bar.css">
-
-
 </head>
 
 <body>
   <div class="top_container sub_pages ">
-    <!-- header section strats -->
+    <!-- header section starts -->
     <header class="header_section">
       <div class="container">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="index.html">
             <img src="images/logo.png" alt="">
-            <span>
-              Gallery
-            </span>
+            <span>Gallery</span>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -71,7 +85,9 @@
                 <li class="nav-item ">
                   <a class="nav-link" href="teacher.html"> TeacherS </a>
                 </li>
-
+                <li class="nav-item ">
+                  <a class="nav-link" href="prefects.html"> Prefects </a>
+                </li>
                 <li class="nav-item">
                   <a class="nav-link" href="vehicle.html"> Batches </a>
                 </li>
@@ -79,12 +95,15 @@
                 <li class="nav-item">
                   <a class="nav-link" href="contact.html">Gallery</a>
                 </li>
-
+                <li class="nav-item">
+                  <a class="nav-link" href="necessary.html">Necessaries </a>
+                </li>
               </ul>
               <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
                 <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
               </form>
             </div>
+          </div>
         </nav>
       </div>
     </header>
@@ -92,59 +111,28 @@
   <!-- end header section -->
 
   <!-- contact section -->
-
   <section class="contact_section layout_padding">
     <div class="container">
-
-      <h2 class="main-heading">
-        
-       PHOTO GALLERY
-      </h2>
-      <p class="text-center">
-        You will love to see...!!!
-
-      </p>
-      <div class="">
-        <div class="contact_section-container">
-          <div class="row">
-            <div class="col-md-6 mx-auto">
-              <div class="contact-form">
-                <form action="">
-                  <div>
-                    <p align="center"><a href="basketball.html"><img src="phd2.jpg" width="251" height="50"></a>
-                  </div>
-                  <div>
-                    <p align="center"><a href="swimming.html"><img src="phd.jpg" width="251" height="50"></a>
-                  </div>
-                   <div>
-                    <p align="center"><a href="music.html"><img src="phd3.jpg" width="251" height="50"></a>
-                  </div>
-                   <div>
-                    <p align="center"><a href="csc.html"><img src="phd4.jpg" width="251" height="50"></a>
-                  </div>
-                  <div class="d-flex justify-content-center">
-                    <button type="submit" class="btn_on-hover">
-                      Found Yourself?
-                    </button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
+      <h2 class="main-heading">PHOTO GALLERY</h2>
+      <p class="text-center">You will love to see...!!!</p>
+      <div class="button-container">
+        <a href="crosscountry.html" class="button" style="background-color: blue;">Cross Country</a>
+        <a href="obstacle.html" class="button" style="background-color: blue;">Obstacle</a>
+        <a href="cricket.html" class="button" style="background-color: blue;">Cricket</a>
+        <a href="volleyball.html" class="button" style="background-color: blue;">Volleyball</a>
+        <a href="basketball.html" class="button" style="background-color: blue;">Basketball</a>
+        <a href="swimming.html" class="button" style="background-color: blue;">Swimming</a>
+        <a href="music.html" class="button" style="background-color: blue;">Music</a>
+        <a href="csc.html" class="button" style="background-color: blue;">CSC</a>
       </div>
-
     </div>
   </section>
-
-
   <!-- end contact section -->
 
   <!-- footer section -->
   <section class="container-fluid footer_section">
     <p>
       Copyright &copy; 2023 All Rights Reserved By FAZLUL HAQUE HOUSE
-     
     </p>
   </section>
   <!-- footer section -->
@@ -152,7 +140,6 @@
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
   <!-- progreesbar script -->
-
   </script>
   <script>
     // This example adds a marker to indicate the position of Bondi Beach in Sydney,
@@ -178,7 +165,8 @@
     }
   </script>
   <!-- google map js -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap">
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap">
   </script>
   <!-- end google map js -->
 </body>
