@@ -8,6 +8,7 @@
 <!DOCTYPE html>
 <html>
 
+
 <head>
   <!-- Basic -->
   <meta charset="utf-8" />
@@ -21,8 +22,6 @@
 
   <title>FAZLUL HAQUE HOUSE</title>
 
-
-
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
   <!-- progress barstle -->
@@ -35,13 +34,37 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
-
-
-
-
   <link rel="stylesheet" href="css/css-circular-prog-bar.css">
 
+  <style>
+    .navbar-nav {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
 
+    .nav-item {
+      margin-right: 15px;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      background-color: white;
+      color: black;
+      border: 1px solid black; /* Add this line to set the border color */
+      transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Add border-color to the transition */
+    }
+
+    .nav-link:hover {
+      background-color: #007bff; /* Change to the color you prefer on hover */
+      color: white;
+      border-color: #007bff; /* Change to the border color you prefer on hover */
+    }
+  </style>
 </head>
 
 <body>
@@ -70,25 +93,21 @@
                 <li class="nav-item ">
                   <a class="nav-link" href="about.html"> About </a>
                 </li>
-
                 <li class="nav-item ">
                   <a class="nav-link" href="teacher.html"> Teachers </a>
                 </li>
                 <li class="nav-item ">
                   <a class="nav-link" href="prefects.html"> Prefects </a>
                 </li>
-
                 <li class="nav-item">
                   <a class="nav-link" href="vehicle.html">Batches </a>
                 </li>
-
                 <li class="nav-item">
                   <a class="nav-link" href="contact.html">Gallery</a>
                 </li>
-                 <li class="nav-item">
+                <li class="nav-item">
                   <a class="nav-link" href="necessary.html">Necessaries </a>
                 </li>
-
               </ul>
               <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
                 <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
