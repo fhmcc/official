@@ -111,9 +111,7 @@
                   <a class="nav-link" href="necessary.html">Necessaries </a>
                 </li>
               </ul>
-              <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
-                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
-              </form>
+             
    
 
       </div>
@@ -149,6 +147,60 @@
     </section>
   </div>
   <!-- end header section -->
+   <!-- Slideshow section -->
+<div class="slideshow-container" style="width: 70%; height: 60%; margin: auto; border: 6px solid black; padding: 10px; position: relative;">
+    <!-- Manual navigation arrows on the left side -->
+    <a class="prev" onclick="plusSlides(-1)" style="position: absolute; top: 50%; left: 0; transform: translateY(-50%);">&#10094;</a>
+
+    <!-- Manual navigation arrows on the right side -->
+    <a class="next" onclick="plusSlides(1)" style="position: absolute; top: 50%; right: 0; transform: translateY(-50%);">&#10095;</a>
+
+    <div class="mySlides">
+        <img src="b1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <img src="b2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <img src="b3.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <img src="b4.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <img src="b5.jpg" style="width:100%">
+    </div>
+</div>
+
+<script>
+    var slideIndex = 0;
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 3000); // Change slide every 3 seconds
+    }
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    showSlides(); // Initialize slideshow
+</script>
+<!-- End Slideshow section -->
+                  
 
   <!-- about section -->
   <section class="about_section layout_padding">
