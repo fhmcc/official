@@ -447,6 +447,62 @@
 
   <!-- end landing section -->
 
+                    <section>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <style>
+        .visitor-section {
+            margin: 20px;
+        }
+
+        #visitor-count {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- Your website header content goes here -->
+    </header>
+
+    <section class="visitor-section">
+        <div id="visitor-count">Loading...</div>
+
+        <script>
+            // Function to set or retrieve the visitor count from the cookie
+            function setOrGetVisitorCount() {
+                var count = 1;  // default value
+
+                // Check if the 'visitorCount' cookie exists
+                var cookies = document.cookie.split(';');
+                for (var i = 0; i < cookies.length; i++) {
+                    var cookie = cookies[i].trim();
+                    if (cookie.indexOf('visitorCount=') === 0) {
+                        // If the cookie exists, retrieve the count
+                        count = parseInt(cookie.substring('visitorCount='.length), 10);
+                        break;
+                    }
+                }
+
+                // Update the count on the webpage
+                document.getElementById('visitor-count').innerText = 'Unique Visitors: ' + count;
+
+                // Increment the count and update the cookie
+                count++;
+                document.cookie = 'visitorCount=' + count;
+            }
+
+            // Call the function when the page is loaded
+            window.onload = setOrGetVisitorCount;
+        </script>
+    </section>
+
+
 
 
 
